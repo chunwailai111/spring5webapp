@@ -52,6 +52,15 @@ public class Author {
         LastName = lastName;
     }
     
+    
+    public Set<Book> getBooks() {
+        return books;
+    }
+
+    public void setBooks(Set<Book> books) {
+        this.books = books;
+    }
+    
     @Override
     public int hashCode() {
         return id != null ? id.hashCode() : 0;
